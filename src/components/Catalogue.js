@@ -7,6 +7,8 @@ import getParams from './fetch/doubleRequest';
 import { getLooked } from './looked';
 import OverlookedSlider from './OverlookedSlider';
 import Sidebar from './Sidebar';
+import shortId from 'shortid';
+
 
 export default class Catalogue extends Component {
     constructor(props) {
@@ -136,13 +138,15 @@ export default class Catalogue extends Component {
     render() {
         const { products, categories, filters, page } = this.state;
         if (!categories) return null;
-        const title =
-            filters.categoryId && categories.length
-                ? categories.find(el => el.id === parseInt(filters.categoryId))
-                      .title
+        const title = filters.categoryId && categories.length
+                ? categories.find(el => el.id === parseInt(filters.categoryId)).title
                 : filters.search
                     ? 'Результаты поиска'
                     : 'Все товары';
+        const itemCard = products.data.map(item => (<ItemCard
+            {...item}
+            key={shortId.generate()}
+            products={this.state.products.data}/>));
 
         return (
             <div>
@@ -176,12 +180,7 @@ export default class Catalogue extends Component {
                             </div>
                         </section>
                         <section className="product-catalogue__item-list">
-                            {products.data.map(item => (
-                                <ItemCard
-                                    {...item}
-                                    products={this.state.products.data}
-                                />
-                            ))}
+                            {itemCard}
                         </section>
                         {products.pages === 1 ? null : (
                             <Pagination

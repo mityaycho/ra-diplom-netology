@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a77ce5-4ff4-4550-9931-b402cccda25e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ra-13-Dremuchev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RA_Diplom_Netology.iml" afterDir="false" />
+    <list default="true" id="58a77ce5-4ff4-4550-9931-b402cccda25e" name="Default" comment="delete dangerous warning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalogue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalogue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ItemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XqveYRYDsNzj1PlybS7GoEPZy7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -62,6 +65,9 @@
       <workItem from="1581786536597" duration="230000" />
       <workItem from="1581861964023" duration="1616000" />
       <workItem from="1581863792769" duration="239000" />
+      <workItem from="1581864100597" duration="580000" />
+      <workItem from="1581864691705" duration="42000" />
+      <workItem from="1581864812260" duration="6062000" />
     </task>
     <servers />
   </component>
@@ -77,22 +83,26 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="545" y="297" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.0.1474.864@62.0.1474.864" timestamp="1581862783869" />
-    <state width="1453" height="207" key="GridCell.Tab.0.bottom" timestamp="1581863611811">
+    <state x="453" y="26" key="CommitChangelistDialog2" timestamp="1581872532063">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="207" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1581863611811" />
-    <state width="1453" height="207" key="GridCell.Tab.0.center" timestamp="1581863611811">
+    <state x="453" y="26" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1581872532063" />
+    <state width="1453" height="207" key="GridCell.Tab.0.bottom" timestamp="1581870354554">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="207" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1581863611811" />
-    <state width="1453" height="207" key="GridCell.Tab.0.left" timestamp="1581863611811">
+    <state width="1453" height="207" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1581870354554" />
+    <state width="1453" height="207" key="GridCell.Tab.0.center" timestamp="1581870354554">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="207" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1581863611811" />
-    <state width="1453" height="207" key="GridCell.Tab.0.right" timestamp="1581863611811">
+    <state width="1453" height="207" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1581870354554" />
+    <state width="1453" height="207" key="GridCell.Tab.0.left" timestamp="1581870354554">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="207" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1581863611811" />
+    <state width="1453" height="207" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1581870354554" />
+    <state width="1453" height="207" key="GridCell.Tab.0.right" timestamp="1581870354554">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1453" height="207" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1581870354554" />
     <state x="308" y="75" key="SettingsEditor" timestamp="1581864154496">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

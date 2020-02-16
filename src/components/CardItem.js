@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ItemCard from './ItemCard';
+import shortId from 'shortid';
 
 export default class CardItem extends Component {
     render() {
@@ -16,6 +17,7 @@ export default class CardItem extends Component {
                 {products.map(item => (
                     <ItemCard
                         {...item}
+                        key={shortId.generate()}
                         products={this.props.products}
                         favorite
                         updateFavorite={this.props.updateFavorite}

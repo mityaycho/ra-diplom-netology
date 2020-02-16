@@ -4,12 +4,28 @@ import Link from 'react-router-dom/Link';
 import { getItem } from './fetch/gettingRequests';
 
 class ItemCard extends Component {
+    _isMounted = false;
+
     constructor(props) {
         super(props);
         this.state = {
             availableSizes: [],
             currentImage: 0,
         };
+    }
+
+    componentDidMount() {
+        this._isMounted = true;
+        getItem(this.props.id).then(res => {
+            if (this._isMounted) {
+                this.setState({availableSizes: res.data.sizes})
+
+            }
+        });
+    }
+
+    componentWillUnmount() {
+        this._isMounted = false;
     }
 
     toFavorite(event, id) {
@@ -45,12 +61,6 @@ class ItemCard extends Component {
         event.preventDefault();
         const onRight = event.target.classList.contains('arrow_right') ? 1 : 0;
         this.slidePhotoTo(onRight);
-    }
-
-    componentDidMount() {
-        getItem(this.props.id).then(res =>
-            this.setState({ availableSizes: res.data.sizes })
-        );
     }
 
     render() {

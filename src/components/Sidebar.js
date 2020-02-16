@@ -447,7 +447,7 @@ class Sidebar extends Component {
                                     discounted: event.target.checked,
                                 })
                             }
-                            checked={filters.discounted}
+                            checked={!!filters.discounted}
                         />
                         <span className="checkbox-discount" />{' '}
                         <span className="text-discount">Со скидкой</span>
